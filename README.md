@@ -1,70 +1,99 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdow
+# Code Editor with PDF Export
 
-## Available Scripts
+A minimalist React application that allows users to paste code, view it with syntax highlighting, and export it as a PDF while preserving formatting.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Code Editing**: Paste and edit code in a clean text area
+- **Syntax Highlighting**: Real-time highlighting for multiple languages
+- **Language Support**: JavaScript, Python, HTML, CSS, and Java
+- **PDF Export**: Download formatted code as PDF with preserved syntax colors
+- **Responsive Design**: Works on desktop and tablet devices
+- **Accessible UI**: Proper labels, focus states, and semantic HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Application Screenshot](https://via.placeholder.com/800x500?text=Code+Editor+Screenshot)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Paste your code** into the editor area
+2. **Select the programming language** from the dropdown
+3. **View the syntax-highlighted preview** in real-time
+4. **Click "Download as PDF"** to generate a formatted PDF
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technical Details
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Create React App](https://create-react-app.dev/) - React project bootstrapping
+- [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) - Syntax highlighting component
+- [html2pdf.js](https://github.com/eKoopmans/html2pdf.js) - PDF generation from HTML
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+src/
+├── components/
+│   ├── CodeEditor.js
+│   ├── CodePreview.js
+│   ├── DownloadButton.js
+│   └── LanguageSelector.js
+├── App.js
+├── App.css
+├── index.js
+└── index.css
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Key Components
 
-## Learn More
+- **CodeEditor**: Text area for code input with language selector
+- **CodePreview**: Displays syntax-highlighted code
+- **DownloadButton**: Triggers PDF generation
+- **LanguageSelector**: Dropdown for language selection
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Color Palette
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application uses a neutral color scheme:
+- Backgrounds: `#f8f9fa`, `#ffffff`
+- Text: `#212529`, `#495057`
+- Borders: `#dee2e6`
+- Buttons: `#e9ecef` (normal), `#adb5bd` (hover)
 
-### Code Splitting
+## Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### Analyzing the Bundle Size
+## Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- No TypeScript support
+- No routing or backend integration
+- PDF generation may vary slightly between browsers
+- Limited to the specified programming languages
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Please follow these steps:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
