@@ -21,7 +21,7 @@ A minimalist React application that allows users to paste code, view it with syn
 2. Install dependencies:
    ```bash
    npm install
-   ```
+   
 
 3. Start the development server:
    ```bash
